@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CGR-Contactenos</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/icons.js"></script>
+  <link rel="icon" href="img/perfil.png">
+ 
+  <link href="css/fuente.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="container">
+    <header class="row encabezado">
+      <div class="col-12">
+        <img class="img-fluid" src="img/logo.jpeg" alt="">
+      </div>
+    </header>
+
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+              aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Inicio
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contáctenos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="acercade.html">Acerca de nosotros</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                    aria-expanded="false">Contenidos</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="servicios.html">Servicios</a>
+                    <a class="dropdown-item" href="imagenes.html">Imágenes</a>
+                    <a class="dropdown-item" href="ubicacion.html">¿Dónde nos ubicamos?</a>
+                    <a class="dropdown-item" href="Horario.html">Horario de atención</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="row principal">
+
+      <div class="col-sm-5 col-md-5 col-lg-5 info">
+        <h3 class="text-center">Información de contacto</h3>
+        <ul>
+          <li>Nombre del encargado: César Gamboa </li>
+          <li>Número de teléfono: +(506)7023-5889</li>
+          <li>Email: <a href="mailto:cgrelectromecanica2@gmail.com">cgrelectromecanica2@gmail.com</a></li>
+          <li>Dirección: Calle pedregal 50 norte   de helechos exóticos (Fraijanes)</li>
+        </ul>
+        <div class="imagenC">
+          <img src="img/Cesar.jpeg" alt="">
+        </div>
+      </div>
+
+      <div class="col-sm-7 col-md-7 col-lg-7">
+        <h3 class="text-center">Registro</h3>
+        <form id="formulario" action="">
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="correo" placeholder="nombre@ejemplo.com" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="name" class="form-label">Nombre completo</label>
+            <input type="text" class="form-control" id="name" name="nombre" placeholder="Escriba su nombre completo" >
+          </div>
+
+          <div class="mb-3">
+            <label for="fecha" class="form-label">Fecha de nacimiento</label>
+            <input type="date" class="form-control" id="fecha" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="genero" class="form-label">Género</label>
+            <select class="form-select" id="genero" required> 
+              <option>Masculino</option>
+              <option>Femenino</option>
+              <option>No especifica</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="gradoAcad" class="form-label mt-4">Grado académico</label>
+            <select multiple="" class="form-select" id="gradoAcad" required>
+              <option>Primaria incompleta</option>
+              <option>Primaria completa</option>
+              <option>Secundaria incompleta</option>
+              <option>Secundaria completa</option>
+              <option>Educación superior incompleta</option>
+              <option>Educación superior completa</option>
+            </select>
+          </div>
+
+          <div class="mb-3 text-center">
+            <button type="submit" class="btn btn-primary ">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-center text-white">
+      <div class="container p-4 pb-0">
+        <section class="mb-4">
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/CGR-Soluciones-automotrices-y-veh%C3%ADculos-pesados-100186762686119" role="button"><i
+            class="fa-brands fa-facebook"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://wa.me/50670235889" role="button"><i
+            class="fa-brands fa-whatsapp"></i></a>
+        </section>
+      </div>
+
+      <div class="text-center p-3 backgound fondopie">
+        <credit>&copy;Derechos Reservados CGR <span id="year">
+            <script> document.getElementById("year").innerHTML = new Date().getFullYear()</script>
+          </span>
+        </credit>
+        <div id="date"></div>
+        <script>
+          document.getElementById("date").innerHTML = new Date().toDateString()
+        </script>
+      </div>
+    </footer>
+  </div>
+  <script src="js/formulario.js"></script>
+</body>
+
+</html>
